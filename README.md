@@ -1,1 +1,1 @@
-# CodeQLTest
+# Training
