@@ -51,7 +51,7 @@ namespace FunctionApp1
             }
             catch(NullReferenceException)
             {
-                Console.WriteLine("Person not found.");
+                Console.WriteLine("Testing");
             }
         }
     }
