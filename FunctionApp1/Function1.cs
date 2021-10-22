@@ -51,7 +51,7 @@ namespace FunctionApp1
             }
             catch(NullReferenceException)
             {
-                Console.WriteLine("Testing");
+                Console.WriteLine("Force scan");
             }
         }
     }
