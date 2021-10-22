@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
@@ -36,7 +37,22 @@ namespace FunctionApp1
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
                 : $"Hello, {name}. This HTTP triggered function executed successfully.";
 
+            CatchOfNullReference();
+
             return new OkObjectResult(responseMessage);
+        }
+
+        private static void CatchOfNullReference()
+        {
+            StreamReader sr = null;
+            try
+            {
+                sr.ReadLine();
+            }
+            catch(NullReferenceException)
+            {
+                Console.WriteLine("Person not found.");
+            }
         }
     }
 }
