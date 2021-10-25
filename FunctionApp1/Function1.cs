@@ -51,7 +51,7 @@ namespace FunctionApp1
             }
             catch(NullReferenceException)
             {
-                Console.WriteLine("Force scan 2");
+                Console.WriteLine("Test pull request");
             }
         }
     }
