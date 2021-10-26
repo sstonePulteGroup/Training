@@ -44,14 +44,14 @@ namespace FunctionApp1
 
         private static void CatchOfNullReference()
         {
-            StreamReader sr = null;
+            StreamReader s = null;
             try
             {
-                sr.ReadLine();
+                s.ReadLine();
             }
             catch(NullReferenceException)
             {
-                Console.WriteLine("Test again");
+                Console.WriteLine("Test");
             }
         }
     }
