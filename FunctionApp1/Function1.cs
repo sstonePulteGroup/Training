@@ -51,7 +51,7 @@ namespace FunctionApp1
             }
             catch(NullReferenceException)
             {
-                Console.WriteLine("Test7");
+                Console.WriteLine("Test1");
             }
         }
     }
